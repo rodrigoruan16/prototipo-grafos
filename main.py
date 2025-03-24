@@ -17,22 +17,10 @@ def salvarDados(instanceName, qtyLine, qtyColumn):
     f.close()
     print(s)
 
-def pegarArestas(matrix):
-    l = list()
-    line, columns = matrix.shape
-
-    for i in range(line):
-        for j in range(columns):
-            qty = matrix[i][j]
-            if qty > 0:
-                for _ in range(qty):
-                    l.append((i, j))
-    return l
-
 def main(fileName):
     matrix = lerMatriz(fileName)
     line, col = matrix.shape
     salvarDados(fileName, line, col)
 
-if __name__ == '__main__':
+if __name__ == '__main__': # verifica se o script está sendo rodado como programa central
     main(str(sys.argv[1]))
