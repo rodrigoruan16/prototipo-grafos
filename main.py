@@ -22,5 +22,5 @@ def main(fileName):
     line, col = matrix.shape
     salvarDados(fileName, line, col)
 
-if __name__ == '__main__': # verifica se o script está sendo rodado como programa central
+if __name__ == '__main__': # verifica se o script está sendo rodado como programa central e não foi importado como módulo
     main(str(sys.argv[1]))
