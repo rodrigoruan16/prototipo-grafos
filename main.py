@@ -22,6 +22,5 @@ def main(fileName):
     line, col = matriz.shape
     salvarDados(fileName, line, col)
 
-
 if __name__ == '__main__':
     main(str(sys.argv[1]))
